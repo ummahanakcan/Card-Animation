@@ -2,8 +2,11 @@ const panels = document.querySelectorAll(".panel");
 
 panels.forEach((panel) => {
   panel.addEventListener("click", () => {
+    const isActive = panel.classList.contains("active");
     removeActive();
-    panel.classList.add("active");
+    if (!isActive) {
+      panel.classList.add("active");
+    }
   });
 });
 
