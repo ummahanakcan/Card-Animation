@@ -43,9 +43,8 @@ body {
   align-items: flex-end;
   overflow: hidden;
   padding-bottom: 2rem;
-  opacity: 1;
 }
-.container .panel:hover {
+.container .panel:hover .img-overlay {
   opacity: 0.8;
 }
 .container .panel.active {
@@ -55,8 +54,8 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
-.container .panel.active:hover {
-  opacity: 1;
+.container .panel.active:hover .img-overlay {
+  opacity: 0;
 }
 .container .panel .row {
   display: flex;
@@ -91,6 +90,33 @@ body {
 .container .panel .row .description h4 {
   text-transform: uppercase;
   font-weight: 800;
+}
+.container .panel .img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #212529;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.container .panel .img-overlay .icon {
+  color: #fff;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .panel .img-overlay .icon .information {
+  border: 1px solid #fff;
+  padding: 0.5rem 0.8rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+}
+.container .panel .img-overlay .icon .search {
+  transform: translateX(70%);
 }
 
 @media (max-width: 768px) {
