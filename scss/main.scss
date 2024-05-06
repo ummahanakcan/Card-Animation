@@ -64,8 +64,8 @@ body {
       .icon {
         background: #223;
         border-radius: 50%;
-        width: 3.1vw;
-        height: 5.1vh;
+        width: 3.5rem;
+        height: 3.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -121,9 +121,15 @@ body {
   }
 }
 
+@media (max-width: 1120px) {
+  html {
+    font-size: 12px;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
-    width: 100vw;
+    width: 40vw;
     .panel:nth-of-type(4),
     .panel:nth-of-type(5) {
       display: none;
