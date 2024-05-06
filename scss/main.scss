@@ -59,12 +59,13 @@ body {
     .row {
       display: flex;
       align-items: center;
+      justify-content: center;
       color: #fff;
       .icon {
         background: #223;
         border-radius: 50%;
-        width: 3.5rem;
-        height: 3.5rem;
+        width: 3.1vw;
+        height: 5.1vh;
         display: flex;
         justify-content: center;
         align-items: center;
